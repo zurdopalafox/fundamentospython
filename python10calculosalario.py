@@ -21,22 +21,22 @@ elif (salariobruto>250 and salariobruto<=500):
     retencion=.20
 else:
     retencion=.50
-iva=salariobruto*.16
+iva=float(salariobruto*.16)
 salariototal=salariobruto-iva
-print("--------------------------------------")
+print("------------------------------------------------")
 print("HORAS TRABAJADAS A LA SEMANA: " + str(horassemanales))
-print("HORAS EXTRAS TRABAJADAS: " + str(horasextras))
-print("TARIFA POR HORA: " + str(tarifahoraria))
-print("DISTANCIA EN KMS: " + str(kilometros))
-print("DESTINO: " + destino)
-print("RETENCIÓN: " + str(retencion*100) + "%")
-print("SALARIO BASE: " + str(salariobase))
-print("SALARIO POR HORAS EXTRAS: " + str(salariohorasextras))
-print("SALARIO BRUTO: " + str(salariobruto))
-print("IVA 16%: " + str(iva))
-print("--------------------------------------")
-print("SALARIO TOTAL A RECIBIR: " + str(salariototal))
-print("--------------------------------------")
+print("HORAS EXTRAS TRABAJADAS     : " + str(horasextras))
+print("TARIFA POR HORA             : " + str(tarifahoraria))
+print("DISTANCIA EN KMS            : " + str(kilometros))
+print("DESTINO                     : " + destino)
+print("RETENCIÓN                   : " + str(retencion*100) + "%")
+print("SALARIO BASE                : " + str(salariobase))
+print("SALARIO POR HORAS EXTRAS.   : " + str(salariohorasextras))
+print("SALARIO BRUTO               : " + str(salariobruto))
+print("IVA 16%                     : " + str(iva))
+print("------------------------------------------------")
+print("SALARIO TOTAL A RECIBIR     : " + str(salariototal))
+print("------------------------------------------------")
 
 
 
