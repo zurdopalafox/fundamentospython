@@ -13,8 +13,8 @@ for i in range(len(correoelectronico)):
 posicionarroba = correoelectronico.find("@",0)
 if correoelectronico[posicionarroba + 1] != ".":
         nohaypuntojustodespuesarroba = True
-posiciondelpuntodominio= correoelectronico.rfind(".",0)
-if (posiciondelpuntodominio+2 >= len(correoelectronico) or posiciondelpuntodominio+3 > len(correoelectronico)) and posiciondelpuntodominio != -1:
+posiciondelpuntodominio= correoelectronico.rfind(".")
+if (len(correoelectronico) > posiciondelpuntodominio+3  or len(correoelectronico) > posiciondelpuntodominio+4) and posiciondelpuntodominio != -1:
     eldominioesmayoradosotres = True
 if tienearroba != -1:
     tienearroba = True
@@ -33,5 +33,5 @@ else:
     numeroarrobas = False   
 print("Hay solo una @: ", numeroarrobas)
 print("No hay un punto justo después de la @: ", nohaypuntojustodespuesarroba)
-print("El dominio tiene al menos dos o tres caracteres: ", not(eldominioesmayoradosotres))
+print("El dominio tiene mas de dos o tres caracteres: ", eldominioesmayoradosotres)
 
