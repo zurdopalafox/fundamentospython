@@ -13,18 +13,29 @@ def menu():
     print("2.Resta")
     print("3.Multiplicacion")
     print("4.Division")
-    print("5.Salir")
+    print("5.Introducir nuevos números")
+    print("6.Salir")
+
+ #Creamos método para validar la entrada de datos numericos
+
+def obtener_numero():
+     numero = input("Por favor, ingrese un número válido: ")   
+     while (numero.isdigit() == False):
+         print("Entrada inválida. Intente de nuevo.")
+         numero = input("Por favor, ingrese un número válido: ")
+     numero = int(numero)
+     return numero
 
 # Programa principal
 opcion = '1'
-while opcion in ['1','2','3','4','5']:   
+while opcion in ['1','2','3','4','5','6']:   
     menu()
     opcion = input("Ingrese la opcion (1/2/3/4/5): ")
-    if opcion == "5":
+    if opcion == "6":
        print("Saliendo de la calculadora.")
        break
-    num1 = float(input("Ingrese el primer numero: "))
-    num2 = float(input("Ingrese el segundo numero: "))
+    num1 = obtener_numero() 
+    num2 = obtener_numero()
     if opcion == '1':
         print(num1,"+",num2,"=", sumadosnumeros(num1,num2))
     elif opcion == '2':
@@ -33,6 +44,11 @@ while opcion in ['1','2','3','4','5']:
         print(num1,"*",num2,"=", multiplicaciondenumeros(num1,num2))                
     elif opcion == '4':
         print(num1,"/",num2,"=", divisiondenumeros(num1,num2))
+    elif opcion == '5':
+        print("Introduzca nuevos números para la operación.")
+
+
+
 
 
 
