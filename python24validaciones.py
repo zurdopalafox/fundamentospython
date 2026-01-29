@@ -1,4 +1,5 @@
 import libreria24validaciones
+
 #Validar ISBN
 numeroDeEntrada = input("Ingresa el ISBN : ")
 if libreria24validaciones.validar_isbn(numeroDeEntrada):
