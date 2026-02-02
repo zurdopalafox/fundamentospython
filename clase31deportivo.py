@@ -29,7 +29,7 @@ class Deportivo(Coche):
         else:
             print("El coche deportivo está apagado. No se puede activar el turbo.")
 
-# quiero que el Deportivo siempre tenga 100 km/h más de velocidad máxima que un coche normal
+# Quiero que el Deportivo siempre tenga 100 km/h más de velocidad máxima que un coche normal
             def getVelocidadMaxima(self):
                 velocidadCoche = super().getVelocidadMaxima()
                 return velocidadCoche+ 100 
