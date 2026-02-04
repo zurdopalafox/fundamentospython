@@ -75,13 +75,10 @@ group by FUNCION, sala_cod;
 
 
 12. Averiguar los últimos empleados que se dieron de alta en la empresa en cada uno de los oficios, ordenados por la fecha.
-
 select max(fecha_alt) as FECHAMAXIMA, oficio
 from emp
-group by oficio, fecha_alt
-order by fecha_alt;
-
-select * from emp where oficio ='VENDEDOR' order by fecha_alt;
+group by oficio
+order by FECHAMAXIMA desc;
 
 
 13. Mostrar el número de hombres y el número de mujeres que hay entre los enfermos.
@@ -99,10 +96,14 @@ from PLANTILLA
 group by FUNCION, TURNO;
 
 
-Calcular el número de salas que existen en cada hospital.
+15. Calcular el número de salas que existen en cada hospital.
 
 select count(*) as NUMEROSALAS
 , hospital_cod from sala
-group by hospital_cod
+group by hospital_cod;
 
-Mostrar el número de enfermeras que existan por cada sala.
+16.Mostrar el número de enfermeras que existan por cada sala.
+select count(*) as NUMEROENFERMERAS
+, sala_cod from plantilla
+where funcion = 'ENFERMERA'
+group by sala_cod;
