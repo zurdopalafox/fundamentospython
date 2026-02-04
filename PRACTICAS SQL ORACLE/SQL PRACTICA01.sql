@@ -30,3 +30,9 @@ select * from plantilla where turno = 'M' and ((salario * 14) between 2000000 an
 select * from emp where fecha_alt between '01/01/80' and '12/12/95';
 13. Mostrar los nombres de los departamentos situados en Madrid o en Barcelona.
 select * from dept where LOC in ('MADRID','BARCELONA');
+14. Mostrar todos los enfermos nacidos antes de 1970.
+select * from enfermo where extract(year from fecha_nac) < 1970;
+15. Igual que el anterior, para los nacidos antes de 1970 ordenados por número de inscripción descendente
+select * from enfermo where extract(year from fecha_nac) < 1970 order by inscripcion desc;
+16. Mostrar todos los datos de empleados ordenados por departamento y dentro de este por oficio para tener una visión jerárquica.
+select * from emp order by dept_no asc, oficio desc;
