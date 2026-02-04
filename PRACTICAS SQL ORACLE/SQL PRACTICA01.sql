@@ -6,11 +6,11 @@ select * from hospital;
 1. Mostrar todos los datos de los empleados de nuestra tabla emp.
 select * from emp;
 2. Mostrar el apellido, oficio, salario anual, con las dos extras para aquellos empleados con comisión mayor de 100000.
-select apellido,oficio, salario * 14  from emp where comision > 100000;
+select apellido,oficio, salario * 14 as salario_anual from emp where comision > 100000;
 3. Idem del anterior, pero para aquellos empleados que su salario anual con extras supere las 750.000 ptas.
-select apellido,oficio, salario * 14 + comision from emp where salario * 14 > 750000;
+select apellido,oficio, salario * 14 + comision as salarioanualycomision_total from emp where salario * 14 > 750000;
 4. Idem del anterior, pero para aquellos empleados que sumen entre salario anual con extras y comisión el 1.000.000. 
-select apellido,oficio, salario * 14 + comision from emp where salario * 14 + comision > 1000000;
+select apellido,oficio, salario * 14 + comision as salarioanualycomision_total from emp where salario * 14 + comision > 1000000;
 5. Mostrar todos los datos de empleados ordenados por departamento y dentro de este por oficio para tener una visión jerárquica.(order by)
 select * from emp order by dept_no,oficio;
 6. Mostrar todos los enfermos nacidos antes del 1/1/70.
