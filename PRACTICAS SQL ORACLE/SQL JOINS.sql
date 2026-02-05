@@ -48,6 +48,7 @@ from DEPT
 full join EMP
 on DEPT.DEPT_NO = EMP.DEPT_NO
 group by emp.dept_no, DEPT.LOC;
+
 # Seleccionar apellido, funcion, nombre, dirección del hospital y nombre de la sala de toda la plantilla
 select plantilla.apellido, plantilla.funcion, hospital.nombre, hospital.direccion, sala.nombre
 from PLANTILLA
