@@ -92,9 +92,26 @@ and plantilla.sala_cod = sala.sala_cod;
 12. Visualizar el máximo salario, mínimo salario de los Directores dependiendo de la ciudad en la que trabajen. 
     Indicar el número total de directores por ciudad.
 
-select emp.oficio = 'DIRECTOR', dept.loc, max(emp.salario), min(emp.salario)
+select dept.loc, emp.oficio = 'DIRECTOR', max(emp.salario), min(emp.salario), count(*)
 from EMP
 left join DEPT
 on emp.dept_no = dept.dept_no
+where upper(emp.oficio) = 'DIRECTOR'
 group by emp.oficio, dept.loc;
 
+13.	Averiguar la combinación de que salas podría haber por cada uno de los hospitales.
+
+select hospital.nombre, sala.nombre, count(*) as NUMERO_DE_SALAS
+from hospital
+right join sala
+on hospital.hospital_cod = sala.hospital_cod
+group by hospital.nombre, sala.nombre
+union all
+select 'Total', NULL, count(*) as NUMERO_DE_SALAS
+from hospital
+right join sala
+on hospital.hospital_cod = sala.hospital_cod;
+
+
+select * from emp where oficio = 'DIRECTOR';
+select * from sala;
