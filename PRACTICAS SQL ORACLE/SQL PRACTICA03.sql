@@ -115,6 +115,3 @@ on hospital.hospital_cod = sala.hospital_cod;
 
 select * from emp where oficio = 'DIRECTOR';
 select * from sala;
-
-
-XXXXXX
