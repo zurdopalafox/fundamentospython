@@ -52,3 +52,6 @@ where funcion in ('ENFERMERO', 'ENFERMERA') and hospital_cod = 19;
 
 select * from plantilla;
 
+
+-- YYYYYYY modificacion desde el CRN
+-- YYYYYYY modificacion desde el CRN

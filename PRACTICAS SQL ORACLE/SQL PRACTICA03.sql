@@ -98,3 +98,7 @@ left join DEPT
 on emp.dept_no = dept.dept_no
 group by emp.oficio, dept.loc;
 
+
+-- YYYYYYY modificacion desde el CRN
+-- YYYYYYY modificacion desde el CRN
+
