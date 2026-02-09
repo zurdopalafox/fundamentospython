@@ -111,3 +111,5 @@ select * from emp;
 select * from plantilla order by hospital_cod;
 
 
+-- XXXXXX AGREGO ESTA LINEA DESDE LAP ASUS EN CASA
+-- XXXXXX AGREGO ESTA LINEA DESDE LAP ASUS EN CASA
