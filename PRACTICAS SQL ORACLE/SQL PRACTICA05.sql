@@ -100,7 +100,8 @@ set comision = (select comision from emp where upper(apellido)='ARROYO') + 12000
 where upper(apellido) ='SANCHEZ';
 
 select * from emp;
-
+select * from enfermo;
+select * from plantilla;
 
 Se tienen que desplazar cien camas del Hospital SAN CARLOS para un Hospital de Venezuela.  Actualizar el número de camas del Hospital SAN CARLOS.
 
