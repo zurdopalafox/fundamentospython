@@ -19,11 +19,10 @@ sqlinsert = "insert into hospital values (" + id + ", '" + nombre + "', '" + dir
 print(sqlinsert)
 micursor.execute(sqlinsert)
 
-# insert into DEPT values (55, 'NUEVO', 'MADRID')
+# insert into DEPT values (55, 'NUEVO', 'MADRID') con la funcion 'f' al inicio
 sqlinsert = f"insert into hospital values ({int(id) + 1}, '{nombre}', '{direccion}', '{telefono}', '{nocamas}')"
 print(sqlinsert)
 micursor.execute(sqlinsert)
-
 micursor.execute("commit")
 
 sqlconsulta = "select * from hospital"

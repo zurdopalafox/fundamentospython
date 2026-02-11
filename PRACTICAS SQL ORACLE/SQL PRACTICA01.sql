@@ -36,3 +36,5 @@ select * from enfermo where extract(year from fecha_nac) < 1970;
 select * from enfermo where extract(year from fecha_nac) < 1970 order by inscripcion desc;
 16. Mostrar todos los datos de empleados ordenados por departamento y dentro de este por oficio para tener una visión jerárquica.
 select * from emp order by dept_no asc, oficio desc;
+
+select distinct OFICIO from EMP;
