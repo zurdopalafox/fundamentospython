@@ -116,3 +116,6 @@ select * from plantilla order by hospital_cod;
 
 
 
+
+-- YYYYYYY modificacion desde el CRN
+-- YYYYYYY modificacion desde el CRN

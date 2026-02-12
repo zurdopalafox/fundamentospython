@@ -99,6 +99,12 @@ on emp.dept_no = dept.dept_no
 where upper(emp.oficio) = 'DIRECTOR'
 group by emp.oficio, dept.loc;
 
+<<<<<<< HEAD
+
+-- YYYYYYY modificacion desde el CRN
+-- YYYYYYY modificacion desde el CRN
+
+=======
 13.	Averiguar la combinación de que salas podría haber por cada uno de los hospitales.
 
 select hospital.nombre, sala.nombre, count(*) as NUMERO_DE_SALAS
@@ -121,3 +127,4 @@ select * from sala;
 
 
 xxxxxx
+>>>>>>> ba6f3d8471c6870285bb415a84a2c2078dded704
