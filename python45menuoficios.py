@@ -9,6 +9,7 @@ micursor.execute(misql)
 
 i = 1
 for oficio in micursor:
+    print("OFICIO de Cursor:",oficio)
     oficios[i] = oficio
     i = i + 1
 # Un diccionario es una colección desordenada de elementos que se almacenan en pares clave-valor.
