@@ -3,6 +3,8 @@ select * from enfermo;
 select * from doctor;
 select * from emp;
 select * from hospital;
+select * from plantilla;
+
 1. Mostrar todos los datos de los empleados de nuestra tabla emp.
 select * from emp;
 2. Mostrar el apellido, oficio, salario anual, con las dos extras para aquellos empleados con comisión mayor de 100000.
